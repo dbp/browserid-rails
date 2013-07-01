@@ -60,7 +60,7 @@ module BrowserID
       def logout_link(text=nil)
         text ||= browserid_config.logout.text
         target = browserid_config.logout.path || '#'
-        link_to content_tag(:span, text), target, class: "browserid_login persona-button"
+        link_to content_tag(:span, text), target, class: "browserid_logout persona-button"
       end
     end
   end
